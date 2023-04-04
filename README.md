@@ -14,6 +14,7 @@ Memory card game has built. The game stores the best score and also show the cur
 ### Developement dependencies
 
 - [React](https://react.dev/)
+- [React Icons](https://www.npmjs.com/package/react-icons)
 - [Create React App](https://github.com/facebook/create-react-app)
 
 ### Layout

@@ -1,0 +1,23 @@
+footer {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #1d0d0b, #5c110b);
+}
+
+.reflink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.reflink:hover {
+    color: #cbd5e1;
+}
