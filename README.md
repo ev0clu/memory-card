@@ -6,16 +6,17 @@ Memory card game has built. The game stores the best score and also show the cur
 
 ## Features
 
-- Show current game score
-- Store best score
-- Click to each card only once increase the current game score
-- Click to already clicked card reset the current game score counter and update the best score if it is higher than before
+-   Show current game score
+-   Store best score
+-   Click to each card only once increase the current game score
+-   Click to already clicked card reset the current game score counter and update the best score if it is higher than before
+-   Shuffle cards after each clicking
 
 ### Developement dependencies
 
-- [React](https://react.dev/)
-- [React Icons](https://www.npmjs.com/package/react-icons)
-- [Create React App](https://github.com/facebook/create-react-app)
+-   [React](https://react.dev/)
+-   [React Icons](https://www.npmjs.com/package/react-icons)
+-   [Create React App](https://github.com/facebook/create-react-app)
 
 ### Layout
 
