@@ -9,9 +9,16 @@ main {
 }
 
 .card-group,
-img {
+img,
+.hero-name {
     border-radius: 1rem;
-    width: 8rem;
+    width: 9rem;
+    height: auto;
+    text-align: center;
+}
+
+img {
+    padding: 0.5rem;
 }
 
 .card-group {
@@ -19,17 +26,20 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    width: 10rem;
-    padding: 0.8rem 0.3rem 0.3rem 0.3rem;
     background-image: linear-gradient(to bottom, #1d0d0b, #5c110b);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .hero-name {
     font-size: 1.2rem;
+    padding-bottom: 0.5rem;
 }
 
-img:hover {
+.card-group:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {

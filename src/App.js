@@ -66,10 +66,37 @@ function App() {
         }
     }, [load, images]);
 
+    const handleClick = (e) => {
+        e.preventDefault();
+
+        const name = e.target.parentNode.lastChild.textContent;
+        let newData = data.map((element) => {
+            return { ...element };
+        });
+
+        for (let i = 0; i < newData.length; i++) {
+            if (newData[i].name === name) {
+                if (newData[i].isClick) {
+                    if (bestScore < score) {
+                        setBestScore(score);
+                    }
+                    setScore(0);
+                    newData = newData.map((element) => {
+                        return { ...element, isClick: false };
+                    });
+                } else {
+                    setScore(score + 1);
+                    newData[i].isClick = true;
+                }
+                break;
+            }
+        }
+    };
+
     return (
         <div className="App">
             <Header score={score} bestScore={bestScore} />
-            <Main data={data} />
+            <Main data={data} handleClick={handleClick} />
             <Footer />
         </div>
     );

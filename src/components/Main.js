@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../assets/styles/Main.css';
 
-const Main = ({ data }) => {
+const Main = ({ data, handleClick }) => {
     return (
         <main className="main">
             {data.map((element, index) => {
@@ -10,10 +10,10 @@ const Main = ({ data }) => {
                     <div
                         key={`card${index}`}
                         className="card-group"
-                        data-index={index}
+                        onClick={handleClick}
                     >
                         <img src={element.src} alt={element.name} />
-                        <p className="hero-name">{element.name}</p>
+                        <div className="hero-name">{element.name}</div>
                     </div>
                 );
             })}
