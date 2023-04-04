@@ -16,3 +16,10 @@ body {
 * {
     box-sizing: border-box;
 }
+
+@media (max-width: 750px) {
+    body {
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+}
