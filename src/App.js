@@ -66,6 +66,21 @@ function App() {
         }
     }, [load, images]);
 
+    const shuffleCards = (newDataArray) => {
+        const currentArray = newDataArray.map((element) => {
+            return { ...element };
+        });
+        const shuffleArray = [];
+
+        for (let i = data.length; i > 0; i--) {
+            const randomIndex = Math.floor(Math.random() * i);
+            shuffleArray.push(currentArray[randomIndex]);
+            currentArray.splice(randomIndex, 1);
+        }
+
+        return shuffleArray;
+    };
+
     const handleClick = (e) => {
         e.preventDefault();
 
@@ -91,6 +106,7 @@ function App() {
                 break;
             }
         }
+        setData(shuffleCards(newData));
     };
 
     return (
