@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.e1e4795d.css",
+    "main.css": "/memory-card/static/css/main.19320eb6.css",
     "main.js": "/memory-card/static/js/main.fa43195e.js",
     "static/media/dota2_background.jpg": "/memory-card/static/media/dota2_background.bf7e7e36051c2026eb3f.jpg",
     "static/media/invoker.png": "/memory-card/static/media/invoker.5384259e66ef156df3e1.png",
@@ -16,11 +16,11 @@
     "static/media/windranger.png": "/memory-card/static/media/windranger.8a30aa202246a4a98418.png",
     "static/media/dazzle.png": "/memory-card/static/media/dazzle.7e5031f64bd9c93ea8fb.png",
     "index.html": "/memory-card/index.html",
-    "main.e1e4795d.css.map": "/memory-card/static/css/main.e1e4795d.css.map",
+    "main.19320eb6.css.map": "/memory-card/static/css/main.19320eb6.css.map",
     "main.fa43195e.js.map": "/memory-card/static/js/main.fa43195e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1e4795d.css",
+    "static/css/main.19320eb6.css",
     "static/js/main.fa43195e.js"
   ]
 }
