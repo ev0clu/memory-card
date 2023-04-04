@@ -25,9 +25,7 @@ const Main = ({ data, handleClick, gameover, handleRestartClick }) => {
                 <div className="gameover-board">
                     <div className="gameover">
                         <p>You win!</p>
-                        <button onClick={handleRestartClick}>
-                            Restart
-                        </button>{' '}
+                        <button onClick={handleRestartClick}>Restart</button>
                     </div>
                 </div>
             )}

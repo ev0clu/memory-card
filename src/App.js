@@ -70,6 +70,7 @@ function App() {
     useEffect(() => {
         if (score === 12) {
             setGameover(true);
+            setBestScore(score);
         }
     }, [score]);
 
@@ -85,13 +86,10 @@ function App() {
             currentArray.splice(randomIndex, 1);
         }
 
-        // return shuffleArray;
-        return newDataArray;
+        return shuffleArray;
     };
 
     const handleClick = (e) => {
-        e.preventDefault();
-
         const name = e.target.parentNode.lastChild.textContent;
         let newData = data.map((element) => {
             return { ...element };
