@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.e1e4795d.css",
+    "main.js": "/memory-card/static/js/main.fa43195e.js",
+    "static/media/dota2_background.jpg": "/memory-card/static/media/dota2_background.bf7e7e36051c2026eb3f.jpg",
+    "static/media/invoker.png": "/memory-card/static/media/invoker.5384259e66ef156df3e1.png",
+    "static/media/bountyhunter.png": "/memory-card/static/media/bountyhunter.a83d32e07b311bfeb93a.png",
+    "static/media/slark.png": "/memory-card/static/media/slark.39dbcc9fa23b941464c8.png",
+    "static/media/alchemist.png": "/memory-card/static/media/alchemist.752871b2ec374f6beb34.png",
+    "static/media/warlock.png": "/memory-card/static/media/warlock.9953463a0354a24570df.png",
+    "static/media/stormspirit.png": "/memory-card/static/media/stormspirit.0ae54a69e67d3f2b60f8.png",
+    "static/media/ogre.png": "/memory-card/static/media/ogre.6fa2b3a282751d84e15f.png",
+    "static/media/hoodwink.png": "/memory-card/static/media/hoodwink.181d5f56143547b556ca.png",
+    "static/media/lina.png": "/memory-card/static/media/lina.20355aa0b704fd96d0de.png",
+    "static/media/crystalmaiden.png": "/memory-card/static/media/crystalmaiden.6ee05e9b57d68625c4eb.png",
+    "static/media/windranger.png": "/memory-card/static/media/windranger.8a30aa202246a4a98418.png",
+    "static/media/dazzle.png": "/memory-card/static/media/dazzle.7e5031f64bd9c93ea8fb.png",
+    "index.html": "/memory-card/index.html",
+    "main.e1e4795d.css.map": "/memory-card/static/css/main.e1e4795d.css.map",
+    "main.fa43195e.js.map": "/memory-card/static/js/main.fa43195e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1e4795d.css",
+    "static/js/main.fa43195e.js"
+  ]
+}
