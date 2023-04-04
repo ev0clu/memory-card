@@ -89,20 +89,6 @@ button:active {
     background-color: #9a3412;
 }
 
-@media (max-width: 1200px) {
-    .gameboard {
-        display: grid;
-        grid-template-columns: repeat(4, 10rem);
-    }
-
-    .card-group,
-    img,
-    .hero-name {
-        border-radius: 14px;
-        width: 10rem;
-    }
-}
-
 @media (max-width: 750px) {
     .gameboard {
         display: grid;
