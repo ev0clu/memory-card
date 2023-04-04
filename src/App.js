@@ -13,6 +13,7 @@ function App() {
     const [images, setImages] = useState([]);
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
+    const [gameover, setGameover] = useState(false);
 
     const initCycle = useRef(true);
 
@@ -66,6 +67,12 @@ function App() {
         }
     }, [load, images]);
 
+    useEffect(() => {
+        if (score === 12) {
+            setGameover(true);
+        }
+    }, [score]);
+
     const shuffleCards = (newDataArray) => {
         const currentArray = newDataArray.map((element) => {
             return { ...element };
@@ -78,7 +85,8 @@ function App() {
             currentArray.splice(randomIndex, 1);
         }
 
-        return shuffleArray;
+        // return shuffleArray;
+        return newDataArray;
     };
 
     const handleClick = (e) => {
@@ -109,10 +117,32 @@ function App() {
         setData(shuffleCards(newData));
     };
 
+    const handleRestartClick = (e) => {
+        e.preventDefault();
+
+        let newData = data.map((element) => {
+            return { ...element };
+        });
+
+        newData = newData.map((element) => {
+            return { ...element, isClick: false };
+        });
+
+        setData(newData);
+        setScore(0);
+        setBestScore(0);
+        setGameover(false);
+    };
+
     return (
         <div className="App">
             <Header score={score} bestScore={bestScore} />
-            <Main data={data} handleClick={handleClick} />
+            <Main
+                data={data}
+                handleClick={handleClick}
+                handleRestartClick={handleRestartClick}
+                gameover={gameover}
+            />
             <Footer />
         </div>
     );
